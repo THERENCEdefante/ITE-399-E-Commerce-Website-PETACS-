@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"type="image/x-icon"href="img/logo1.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>PetAccs</title>
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+:root{
+    --brown:rgb(250,250,210);
+    --font:rgb(68, 40, 21);
+    --back:rgb(128, 128,128,0.1);
+}
+body{
+
+    width: 100%;
+    background:url('img/back1.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+nav{
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    background:none;
+}
+nav .main{
+    position:relative;
+    max-width: 1300px;
+    padding:0px, 30px;
+    height: 70px;
+    line-height: 70px;
+    margin:auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main .logo {
+    color: var(--brown);
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.icons a{
+    font-size: 30px;
+    color:var(--font);
+    margin-left: 1.5rem;
+}
+.icons a:hover{
+    color:var(--brown);
+}
+
+.logo{
+    font-family: 'Lobster', cursive;
+    font-size: 30px; 
+    color:var(--font); 
+    text-shadow:var(--back);
+}
+.logo span{
+    font-family: 'Lobster', cursive;
+    color:var(--font);
+    text-shadow: 2px 2px var(--brown);
+}
+.form{
+    width:350px;
+    height:390px;
+    background: linear-gradient(to top,rgba(209,206,206,0.8)50%,rgba(209, 206, 206, 0.8)50%);
+    position:relative;
+    text-align: center;
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: 120px;
+            
+
+}
+.form h2{
+    width:220px;
+    font-family: sans-serif;
+    text-align: center;
+    color:var(--font);
+    font-size: 26px;
+    border-radius: 10px;
+    padding:10px;
+    }
+.form input{
+     width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid var(--font);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color:var(--font);
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+        }
+
+    .form input:fucos{
+     outline: none;
+    }
+    ::placeholder{
+    color:var(--font);
+    font-family: Arial;
+     }
+    .b1{
+    width:240px;
+    height: 40px;
+    background-color: var(--font);
+    border:none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color:#fff;
+    transition: 0.4 ease;
+    }
+    
+        .b1:hover{
+            background:var(--brown);
+            color:black;
+        }
+        .form .link{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            padding-top: 20px;
+            text-align: center;
+            color:black;
+        }
+        .icon .link a{
+            text-decoration: none;
+            color:var(--font);
+        }
+        .icon i{
+            color:var(--font);
+            font-size: 30px;
+            padding-left: 14px;
+            padding-top: 5px;
+            transition:  0.4s ease;    
+        }
+        .icon1{
+            color:var(--font);
+            font-size: 30px;
+            padding-left: 14;
+            padding-top: 5px;
+            transition:  0.4s ease;
+        }
+        .icon i:hover{
+            color:var(--brown);
+        }
+
+        
+
+
+
+
+</style>
+<body>
+    <nav>
+    <div class="main">
+        <div class="logo">
+            pet<span>Accs</span></div>
+            <div class="icons">
+                <a href="index.html"><i class="fa fa-home"></i></a>
+                <a href="shop.html"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-user"></i></a>    
+            </div>
+    </div>
+    </nav>
+
+    <br>
+
+    <center>
+
+        <div class="form">
+            <center><h2>Login Here</h2></center>
+            <input type="email" name="email"placeholder="Enter Email Here"><br>
+
+            <input type="password" name="pass"placeholder="Enter Password Here"><br>
+            <button class="b1">Login</button>
+
+            <p class="link">Don't have an account<br>
+            <a href="#">Sign up</a> here</a></p>
+            <p class="l1">Login in with</p>
+
+            <div class="icon">
+                <i class="fa fa-facebook-official"></i>
+                <i class="fa fa-envelope"></i>
+                <i class="fa fa-twitter-square"></i>
+                <i class="fa fa-comment"></i>
+
+
+            </div>
+        </div>
+        </center>
+
+
+    
+   
+        
+    
+</body>
+</html>
